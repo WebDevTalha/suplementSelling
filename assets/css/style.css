@@ -1,0 +1,163 @@
+/*----------------------------------------------
+*
+* [Main Stylesheet]
+*
+* Template Name : Suplement Selling
+* Version       : 1.0.0
+* Author        : Talha
+* Author URL    : http://www.talhaweb.com/
+* Description   : suplement Selling client test project
+* 
+----------------------------------------------*/
+
+/*----------------------------------------------
+*
+* [Font Import]
+*
+----------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+
+/*----------------------------------------------
+1. custom property
+----------------------------------------------*/
+
+:root {
+    --body-bg: #dee1ea;
+    --text-primary: #8597ad;
+    --text-font: 'Poppins', sans-serif;
+    --normal-font: 300;
+}
+
+
+/*----------------------------------------------
+
+[ALL CONTENTS]
+
+1. Default css
+2. Header Area
+3. Section 
+4. Helper Class
+5. Header
+6. Slider
+7. Feature
+8. Widget
+9. Form and Field | 9.1 Multi-Step Form
+10. List
+11. Gallery
+12. Footer
+13. Modal
+14. Miscellaneous
+15. Keyframe
+16. All Media Queries
+
+----------------------------------------------*/
+
+/*----------------------------------------------
+1. Default css
+----------------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--body-bg);
+    font-weight: var(--normal-font);
+    color: var(--text-primary);
+    font-size: 1.4rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+/*----------------------------------------------
+2. Header Area
+----------------------------------------------*/
+
+.header {
+    background-color: #fff;
+}
+.header-row {
+    padding: 1rem 0;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+}
+.header-inbox {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+.inbox {
+    color: #7a8d9e;
+}
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-left: 1px solid #8597ad4a;
+}
+
+.header-profile img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.inbox p {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.inbox p i {
+    font-size: 2.5rem;
+    margin-left: .5rem;
+    color: #b4bbc5;
+}
+.inbox.notifications {
+    position: relative;
+}
+.inbox.messages {
+    position: relative;
+}
+
+.inbox p span {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background: #ff3a3a;
+    color: #fff;
+    width: 1.7rem;
+    height: 1.7rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    border-radius: 50%;
+}
+.header-profile p span {
+    font-weight: 600;
+    cursor: pointer;
+}
+.header-profile p span i {
+    margin-left: .5rem;
+}
