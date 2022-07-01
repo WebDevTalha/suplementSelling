@@ -11,6 +11,10 @@
 
     <!-- fontawesome Css link -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- jquery ui Css link -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <!-- Bootstrap Css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Main Css link -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive Css link -->
@@ -23,16 +27,35 @@
         <div class="container">
             <!-- Row -->
             <div class="header-row">
+                <div class="bars">
+                    <a href="#" class="active-bar"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#" class="close-bar"><i class="fa-solid fa-xmark"></i></a>
+                </div>
                 <!-- Wrapper -->
                 <div class="header-wrapper">
                     <!-- Single item -->
                     <div class="header-inbox">
+                        <!-- mobile inbox -->
+                        <div class="mobile-inbox inbox">
+                            <p class="mobile-inbox-show"><i class="fa-solid fa-envelope"></i> <span>1</span></p>
+                        </div>
+                        <!-- show in responsive -->
+                        <div class="show-inbox">
+                            <!-- Notifications -->
+                            <div class="inbox notifications">
+                                <p>Notifications <i class="fa-solid fa-bell"></i><span>1</span></p>
+                            </div>
+                            <!-- Messages -->
+                            <div class="inbox messages">
+                                <p>Messages <i class="fa-solid fa-comments"></i><span>1</span></p>
+                            </div>
+                        </div>
                         <!-- Notifications -->
-                        <div class="inbox notifications">
+                        <div class="inbox notifications notifications-hide">
                             <p>Notifications <i class="fa-solid fa-bell"></i><span>1</span></p>
                         </div>
                         <!-- Messages -->
-                        <div class="inbox messages">
+                        <div class="inbox messages messages-hide">
                             <p>Messages <i class="fa-solid fa-comments"></i><span>1</span></p>
                         </div>
                     </div>
@@ -77,10 +100,166 @@
     </section>
     <!-- End Sidebar Menu Area -->
 
+    
+    <!-- Start Main Area -->
+    <main>
+        <div class="wrapper">
+            <h2>Forms</h2>
+            <div class="box">
+                <div class="inner-box">
+                    <div id="tabs">
+                        <ul>
+                          <li><a href="#tabs-1">All Forms</a></li>
+                          <li><a href="#tabs-2">Client Statues</a></li>
+                          <li><a href="#tabs-3">Approved</a></li>
+                          <li><a href="#tabs-4">Send back</a></li>
+                          <li><a href="#tabs-5">Pending</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <div class="tab-add-search">
+                                <ul class="row align-items-center">
+                                    <li class="col-md-6"><a href="#">Add New <i class="fa-solid fa-plus"></i></a></li>
+                                    <li class="col-md-6">
+                                        <form action="">
+                                            <input type="text" name="search" class="form-control" id="search">
+                                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                            <table class="table tab-one-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">File Name</th>
+                                        <th scope="col">Date Added</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Application Form - Completed and Signed</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Ad Network Letter</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Agreement and Link to the Terms</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Merchant Reserve Acknowledgement</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Compliance Monitoring Set-Up Form</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Fulfillment Agreement</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> ID and utility bill for owners (90 days)</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Articles of Incorporation</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Corporate Registration</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row"><i class="fa-solid fa-file-lines"></i> Business Licenses</td>
+                                        <td>21. Aug 2021</td>
+                                        <td scope="row">
+                                            <a href="#" class="text-danger close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                            <a href="#" class="bg-primary text-white text-center rounded-circle download"><i class="fa-solid fa-download"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="tabs-2">
+                          <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                        </div>
+                        <div id="tabs-3">
+                          <p>nothing is here</p>
+                        </div>
+                        <div id="tabs-4">
+                          <p>nothing is here</p>
+                        </div>
+                        <div id="tabs-5">
+                          <p>nothing is here</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Main Area -->
+
+    <!-- Modal -->
+    <div class="delete-modal">
+        <div class="delete">
+            <i class="fa-solid fa-circle-xmark text-danger"></i>
+            <p>Are You Sure You Want To Delete This Form?</p>
+            <a href="#" class="btn btn-danger delete-btn">Delete</a>
+            <a href="#" class="btn btn-primary deleteCancel">Cancel</a>
+        </div>
+        <div class="deleted">
+            <i class="fa-solid fa-circle-check text-success"></i>
+            <p>Deleted Successfully!</p>
+            <a href="#" class="btn btn-primary back-btn">Close</a>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
     <!-- Jquery -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Jquery UI -->
     <script src="assets/js/jquery-ui.js"></script>
+    <!-- Jquery UI -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- Main Js -->
     <script src="assets/js/main.js"></script>
 </body>

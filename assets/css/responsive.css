@@ -1,0 +1,73 @@
+/*----------------------------------------------
+*
+* [Responsive Stylesheet]
+*
+* Template Name : Suplement Selling
+* Version       : 1.0.0
+* Author        : Talha
+* Author URL    : http://www.talhaweb.com/
+* Description   : suplement Selling client test project
+* 
+----------------------------------------------*/
+
+/*----------------------------------------------
+*
+* [All responsive Area]
+*
+----------------------------------------------*/
+
+@media all and (max-width: 1020px) {
+    /* Slider */
+    .sidebar {
+        display: none;
+    }
+    .bars .active-bar {
+        display: inline-block;
+    }
+    .bars a {
+        position: relative;;
+        z-index: 999;
+    }
+    .sidebar {
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        z-index: 99;
+    }
+    .sidebar-row h3 {
+        margin: 4rem 0 2rem 3rem;
+    }
+    .sidebar-row ul {
+        margin-left: 2rem;
+        list-style: none;
+        padding: 0;
+    }
+}
+
+
+@media all and (max-width: 790px) {
+    /* Header inbox */
+    .notifications-hide {
+        display: none;
+    }
+    .messages-hide {
+        display: none;
+    }
+    .mobile-inbox {
+        display: inline-block;
+    }
+    .show-inbox {
+        position: absolute;
+        top: 7rem;
+        background: #fff;
+        padding: 2rem 4rem;
+    }
+    .show-inbox div:first-child {
+        margin-bottom: 3rem;
+    }
+
+    /* Sidebar */
+    .logo img {
+        margin-top: 0;
+    }
+}

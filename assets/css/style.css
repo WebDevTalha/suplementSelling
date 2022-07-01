@@ -39,19 +39,7 @@
 1. Default css
 2. Header Area
 3. Sidebar Menu
-4. Helper Class
-5. Header
-6. Slider
-7. Feature
-8. Widget
-9. Form and Field | 9.1 Multi-Step Form
-10. List
-11. Gallery
-12. Footer
-13. Modal
-14. Miscellaneous
-15. Keyframe
-16. All Media Queries
+4. Main Area
 
 ----------------------------------------------*/
 
@@ -88,6 +76,7 @@ img {
     max-width: 1240px;
     width: 100%;
     margin: auto;
+    padding: 0 1.5rem;
 }
 a {
     text-decoration: none;
@@ -104,6 +93,9 @@ a {
 }
 .header-row {
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header-wrapper {
     display: flex;
@@ -179,6 +171,8 @@ a {
     background-color: #fff;
     width: 26rem;
     box-shadow: 7px 3rem 3rem rgb(0 0 0 / 10%);
+    float: left;
+    height: 113rem;
 }
 .logo a {
     display: block;
@@ -209,6 +203,7 @@ a {
     margin-top: 1rem;
     margin-left: 6rem;
     list-style: none;
+    padding: 0;
 }
 
 .sidebar-row ul li a {
@@ -229,3 +224,210 @@ a {
     padding: 1.7rem;
     border-radius: .5rem;
 }
+
+.bars a {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    display: none;
+}
+.mobile-inbox {
+    position: relative;
+    display: none;
+}
+.show-inbox {
+    display: none;
+}
+
+
+/*----------------------------------------------
+4. Main Area
+----------------------------------------------*/
+
+.wrapper h2 {
+    margin-left: 5rem;
+    margin-bottom: 13rem;
+    font-weight: 500;
+}
+main {
+    overflow: hidden;
+    padding: 4rem 7rem;
+}
+.box {
+    padding: 2rem 3rem 4rem 3rem;
+    background: #ecf1f7;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+.ui-widget-content {
+    border: none;
+    background: #ffffff;
+    color: var(--text-primary);
+}
+.ui-tabs {
+    padding: 0;
+}
+.ui-tabs .ui-tabs-nav {
+    padding: 0;
+}
+.ui-widget-header {
+    border: none;
+    background: #ecf1f7;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: none;
+    background: #fff !important;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #000;
+    border-bottom: 5px solid var(--text-secondary);
+}
+#tabs ul li {
+    background: #f8f9fb;
+    border: none;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 1.5rem 2rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-family: var(--normal-font);
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+    cursor: default;
+    font-weight: 600;
+}
+#tabs ul {
+    position: relative;
+}
+#tabs ul li:nth-child(3) {
+    position: absolute;
+    right: 20.3rem;
+    top: -5px;
+}
+#tabs ul li:nth-child(4) {
+    position: absolute;
+    right: 9.4rem;
+    top: -5px;
+}
+#tabs ul li:nth-child(5) {
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+.tab-add-search {
+    margin-bottom: 3rem;
+}
+.tab-add-search ul li form {
+    position: relative;
+}
+.tab-add-search ul li form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    color: var(--text-secondary);
+    background: transparent;
+    font-size: 1.7rem;
+    width: 5rem;
+    height: 100%;
+}
+.tab-add-search ul li {
+    background: #fff !important;
+    list-style: none;
+}
+.tab-add-search ul li a {
+    padding: 1rem 2rem;
+    background: var(--text-secondary);
+    color: #fff;
+    border-radius: .5rem;
+}
+.tab-one-table {
+    color: var(--text-primary);
+}
+
+.tab-one-table thead tr th:first-child {
+    padding-left: 3.5rem;
+}
+.tab-one-table thead tr th {
+    color: #3f5779;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    font-family: var(--text-font);
+}
+.tab-one-table tbody tr td {
+    font-weight: 400;
+    font-family: var(--text-font);
+    padding: 1.3rem 0;
+}
+.tab-one-table tbody tr td i {
+    font-size: 2.3rem;
+}
+.tab-one-table tbody tr td:first-child i{
+    color: var(--body-bg);
+    margin-right: .7rem;
+}
+.tab-one-table tbody tr td:last-child {
+    display: flex;
+    gap: 2rem;
+}
+.tab-one-table tbody tr td:last-child .close i {
+    font-size: 3rem;
+}
+.tab-one-table tbody tr td:last-child .download i {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid var(--body-bg);
+}
+
+/* Close Modal */
+
+.delete-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 6rem 11rem;
+    text-align: center;
+    z-index: 2;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.delete-modal i {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+.delete-modal p {
+    font-size: 1.8rem;
+    max-width: 327px;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+.delete-modal a {
+    font-size: 1.3rem;
+    margin: 0 3rem;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+}
+.delete-modal a:last-child {
+    background: #8597ad;
+}
+.deleted {
+    display: none;
+}
+
