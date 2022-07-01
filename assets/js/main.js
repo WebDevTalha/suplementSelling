@@ -36,4 +36,8 @@ $(document).ready(function(){
     $(".mobile-inbox-show").on('click', function(){
         $(".show-inbox").toggle(500);
     });
+    $(".notifications").on('click', function(){
+        $(".show-all-notifications").toggle(500);
+    });
+
 });
