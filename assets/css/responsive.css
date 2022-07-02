@@ -36,6 +36,13 @@
     }
 }
 
+@media all and (max-width: 1200px) {
+    /* Analytics page */
+    .revenue-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
 
 @media all and (max-width: 1020px) {
@@ -99,13 +106,13 @@
     }
 
     /* Main */
-    #tabs ul li:nth-child(3) {
+    #tabs ul .nth-3 {
         position: static;
     }
-    #tabs ul li:nth-child(4) {
+    #tabs ul .nth-4 {
         position: static;
     }
-    #tabs ul li:nth-child(5) {
+    #tabs ul .nth-5 {
         position: static;
     }
     main {
@@ -147,6 +154,10 @@
         overflow-x: scroll;
         overflow-y: hidden;
     }
+    /* Analytics Page */
+    .revenue-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
@@ -173,5 +184,9 @@
     }
     .header-profile {
         padding-left: 1.5rem;
+    }
+    /* Analytics page */
+    .date-wrapper {
+        gap: 1rem;
     }
 }

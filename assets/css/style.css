@@ -42,6 +42,7 @@
 4. Main Area
 5. form profile page
 6. Chat page
+7. Analytics page
 
 ----------------------------------------------*/
 
@@ -248,7 +249,7 @@ a {
 4. Main Area
 ----------------------------------------------*/
 
-.wrapper h2 {
+.wrapper > h2 {
     margin-left: 5rem;
     margin-bottom: 13rem;
     font-weight: 500;
@@ -305,17 +306,27 @@ main {
 #tabs ul {
     position: relative;
 }
-#tabs ul li:nth-child(3) {
+#tabs ul .nth-3 {
     position: absolute;
     right: 20.3rem;
     top: -5px;
 }
-#tabs ul li:nth-child(4) {
+#tabs ul .nth-4 {
     position: absolute;
     right: 9.4rem;
     top: -5px;
 }
-#tabs ul li:nth-child(5) {
+#tabs ul .nth-5 {
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+.tabs2 > ul li:nth-child(2) {
+    position: absolute;
+    right: 10rem;
+    top: -5px;
+}
+.tabs2 > ul li:nth-child(3) {
     position: absolute;
     right: 0;
     top: -5px;
@@ -859,4 +870,80 @@ div#tabs-2 {
 	line-height: 0;
 	color: var(--text-primary);
     cursor: pointer;
+}
+
+
+
+/*----------------------------------------------
+7. Analytics page
+----------------------------------------------*/
+
+.date-issued {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.date-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.start-date {
+    background: var(--body-bg);
+    padding: .5rem 2rem .5rem 1rem;
+}
+
+.start-date p {
+    margin: 0;
+    color: #556989;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.start-date span {
+    font-size: 1.1rem;
+    font-family: var(--text-font);
+    color: var(--text-secondary);
+    display: inline-block;
+}
+.revenue-wrapper .all-time {
+    text-align: right;
+    display: block;
+    margin: 1rem 0 1.5rem 0;
+    color: #0779e4;
+    text-decoration: underline;
+}
+.revenue-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.single-revenue {
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background: var(--body-bg);
+}
+
+.single-revenue p {
+    font-size: 1.6rem;
+    font-family: var(--text-font);
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.single-revenue h2 {
+    font-size: 3.5rem;
+    font-family: var(--text-font);
+    font-weight: 600;
+}
+
+.single-revenue h2 span {
+    font-size: 1.6rem;
+}
+
+#tabs-3 {
+	padding: 4rem;
 }
