@@ -1030,3 +1030,65 @@ div#tabs-2 {
 .client-resend-modal .resend-modal-btns .resend-cancel {
     background-color: #8597AD;
 }
+
+
+
+
+/*----------------------------------------------
+9. product catalog
+----------------------------------------------*/
+
+.product-box {
+    background-color: #fff;
+    padding: 4rem;
+}
+
+.product-main-content p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #5d708d;
+    margin-bottom: 2rem;
+}
+
+.product-table tbody tr td {
+    padding: 5.3rem 0;
+}
+.product-form-search input {
+    font-size: 1.5rem;
+}
+
+.product-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 4rem 2rem;
+    z-index: 9999;
+    width: 60%;
+    display: none;
+}
+.product-modal-inner {
+    position: relative;
+}
+
+.product-modal-inner h3 {
+    font-size: 2.5rem;
+    padding: 1rem 6rem;
+    border-bottom: 1px solid var(--body-bg);
+    margin-bottom: 2rem;
+    color: #597cab;
+}
+
+.product-modal-inner img {
+    padding: 0 6rem;
+}
+
+.product-modal-inner a {
+    position: absolute;
+    top: -8rem;
+    right: 0;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+}

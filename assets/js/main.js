@@ -78,4 +78,13 @@ $(document).ready(function(){
         $(".client-resend-modal, .overlay").hide();
     });
 
+
+    // Product catalog page
+    $(".product-modal-open-btn").on('click', function(){
+        $(".product-modal, .overlay").show(500);
+    });
+    $(".product-modal-close, .overlay").on('click', function(){
+        $(".product-modal, .overlay").hide();
+    });
+
 });

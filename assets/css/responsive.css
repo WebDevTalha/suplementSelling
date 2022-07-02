@@ -84,6 +84,11 @@
     .client-resend-modal {
         width: 80%;
     }
+
+    /* Product caltalog modal */
+    .product-modal {
+        width: 80%;
+    }
 }
 
 
@@ -139,6 +144,11 @@
     .client-resend-modal {
         width: 90%;
     }
+
+    /* Product caltalog modal */
+    .product-modal {
+        width: 90%;
+    }
     
 
 }
@@ -190,6 +200,15 @@
     }
     .client-resend-modal .resend-modal-btns p {
         margin: 0;
+    }
+
+
+    /* Product caltalog modal */
+    .product-modal-inner h3 {
+        padding: 1rem 0rem;
+    }
+    .product-modal-inner img {
+        padding: 0;
     }
 }
 
