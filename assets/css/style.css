@@ -947,3 +947,86 @@ div#tabs-2 {
 #tabs-3 {
 	padding: 4rem;
 }
+
+
+
+
+/*----------------------------------------------
+8. credentials page
+----------------------------------------------*/
+
+
+.client-view-modal {
+    position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 4rem 7rem;
+	z-index: 9999;
+	width: 60%;
+    display: none;
+}
+.client-view-modal form {
+    padding: 0 8rem;
+}
+
+.client-view-modal form fieldset .mb-3 input {
+    padding: .8rem;
+}
+
+.client-view-modal form fieldset .modal-relativ {
+    position: relative;
+}
+
+.client-view-modal form fieldset .modal-relativ i {
+    position: absolute;
+    bottom: 10px;
+    right: 7px;
+}
+.client-view-modal-close-btn .view-modal-close-btn {
+    background: #8597AD;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+}
+
+
+.client-resend-modal {
+    position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 4rem 7rem;
+	z-index: 9999;
+	width: 60%;
+    text-align: center;
+    display: none;
+}
+
+.client-resend-modal i {
+    color: #3178B6;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+.client-resend-modal > p {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.client-resend-modal .resend-modal-btns p {
+    margin: 0 4rem;
+    padding: .8rem 4rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.client-resend-modal .resend-modal-btns .resend {
+    background-color: #3178B6;
+}
+
+.client-resend-modal .resend-modal-btns .resend-cancel {
+    background-color: #8597AD;
+}

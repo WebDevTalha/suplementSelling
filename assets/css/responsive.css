@@ -76,6 +76,14 @@
     .application-modal {
         width: 80%;
     }
+    
+    /* credentials page modal */
+    .client-view-modal {
+        width: 80%;
+    }
+    .client-resend-modal {
+        width: 80%;
+    }
 }
 
 
@@ -123,6 +131,14 @@
     .application-modal {
         width: 90%;
     }
+
+    /* credentials page modal */
+    .client-view-modal {
+        width: 90%;
+    }
+    .client-resend-modal {
+        width: 90%;
+    }
     
 
 }
@@ -158,6 +174,23 @@
     .revenue-row {
         grid-template-columns: repeat(1, 1fr);
     }
+
+
+    /* credentials page modal */
+    .client-view-modal {
+        padding: 4rem 2rem;
+    }
+    .client-view-modal form {
+        padding: 0;
+    }
+    .resend-modal-btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .client-resend-modal .resend-modal-btns p {
+        margin: 0;
+    }
 }
 
 
@@ -188,5 +221,20 @@
     /* Analytics page */
     .date-wrapper {
         gap: 1rem;
+    }
+
+
+    /* credentials page modal */
+    .client-resend-modal .resend-modal-btns p {
+        padding: .8rem 2rem;
+    }
+    .client-resend-modal > p {
+        margin-bottom: 4rem;
+    }
+    .client-resend-modal i {
+        font-size: 6rem;
+    }
+    .client-resend-modal {
+        padding: 4rem 3rem;
     }
 }

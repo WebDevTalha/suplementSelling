@@ -59,5 +59,23 @@ $(document).ready(function(){
         $(".chat-open").show();
         $(".chat-close").hide();
     });
+    
+
+    // Credentials page modal
+    $(".client-view-modal-btn").on('click', function(){
+        $(".client-view-modal, .overlay").show(500);
+    });
+    $(".view-modal-close-btn, .overlay").on('click', function(){
+        $(".client-view-modal, .overlay").hide();
+    });
+
+
+
+    $(".resend-modal-btn").on('click', function(){
+        $(".client-resend-modal, .overlay").show(500);
+    });
+    $(".resend-cancel, .overlay").on('click', function(){
+        $(".client-resend-modal, .overlay").hide();
+    });
 
 });
