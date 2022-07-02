@@ -150,6 +150,12 @@
         width: 90%;
     }
     
+    .wrapper > h2 {
+        margin-top: 3rem;
+    }
+    .my-profile-box {
+        padding: 3rem;
+    }
 
 }
 
@@ -158,6 +164,11 @@
     .tab-ul-profile {
         justify-content: center;
         gap: 2rem;
+    }
+
+    /* profile */
+    table.personal-info-table tbody tr td input {
+        width: 100%;
     }
 }
 
@@ -210,6 +221,11 @@
     .product-modal-inner img {
         padding: 0;
     }
+
+    /* profile */
+    .upload-photo {
+        flex-direction: column;
+    }
 }
 
 
@@ -255,5 +271,15 @@
     }
     .client-resend-modal {
         padding: 4rem 3rem;
+    }
+
+    /* Profile page */
+    .personal-info-table tbody tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .p-info-btns button {
+        padding: 1rem 3rem;
+        margin: 1rem 1rem;
     }
 }

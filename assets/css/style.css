@@ -1092,3 +1092,84 @@ div#tabs-2 {
     color: #fff;
     text-shadow: 0 0 2px #000;
 }
+
+.avatar h3 {
+    margin-bottom: 3rem;
+}
+
+.upload-photo {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.new-photo img {
+    width: 14rem;
+    height: 14rem;
+}
+
+form.upload-photo-content p {
+    max-width: 43rem;
+    margin-bottom: 2rem;
+}
+
+form.upload-photo-content label {
+    background: var(--text-secondary);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+}
+
+.avatar {
+    margin-bottom: 10rem;
+}
+table.personal-info-table tbody tr td:first-child {
+    padding-right: 5rem;
+}
+
+table.personal-info-table tbody tr td {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+table.personal-info-table tbody tr td input {
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 45rem;
+    outline: none;
+}
+
+.personal-information h3 {
+    font-size: 2.2rem;
+    padding-bottom: 3rem;
+}
+.p-info-btns button {
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    font-size: 1.4rem;
+}
+
+.p-info-btns button:first-child {
+    background: #B1BFCC;
+    color: #fff;
+}
+
+.p-info-btns button:last-child {
+    background: #8597AD;
+    color: #fff;
+}
+.forget-password {
+    text-align: right;
+}
+
+.forget-password a {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 2rem 0;
+}
+.profile-sidebar {
+    height: 153rem;
+}
