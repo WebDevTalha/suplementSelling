@@ -40,4 +40,12 @@ $(document).ready(function(){
         $(".show-all-notifications").toggle(500);
     });
 
+    // Application modal
+    $(".view-modal-btn").on('click', function(){
+        $(".application-modal, .overlay").show(500);
+    });
+    $(".a-modal-close-btn, .overlay").on('click', function(){
+        $(".application-modal, .overlay").hide();
+    });
+
 });

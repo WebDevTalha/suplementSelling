@@ -40,6 +40,7 @@
 2. Header Area
 3. Sidebar Menu
 4. Main Area
+5. form profile page
 
 ----------------------------------------------*/
 
@@ -128,6 +129,9 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+.hide-profile-name-n {
+    display: none;
 }
 .inbox p i {
     font-size: 2.5rem;
@@ -370,6 +374,7 @@ main {
 .tab-one-table tbody tr td:last-child {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 .tab-one-table tbody tr td:last-child .close i {
     font-size: 3rem;
@@ -382,7 +387,10 @@ main {
 tbody tr:not(:last-child) {
     border-bottom: 1px solid var(--body-bg);
 }
-
+.tab-one-table {
+	color: var(--text-primary);
+	width: 84rem;
+}
 div#tabs-2 .tab-one-table thead tr th:first-child {
     padding-left: 0.2rem;
 }
@@ -414,7 +422,7 @@ div#tabs-2 {
     background-color: #fff;
     padding: 6rem 11rem;
     text-align: center;
-    z-index: 2;
+    z-index: 9999;
 }
 .overlay {
     display: none;
@@ -424,7 +432,7 @@ div#tabs-2 {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
-    z-index: 1;
+    z-index: 999;
 }
 .delete-modal i {
     font-size: 7rem;
@@ -461,4 +469,115 @@ div#tabs-2 {
     background: #fff;
     width: 320px;
     padding: 2rem 4rem;
+}
+
+
+
+
+/*----------------------------------------------
+5. form profile page
+----------------------------------------------*/
+
+
+.client-profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.c-profile-image img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(1);
+}
+
+.c-profile-image {
+    position: relative;
+}
+
+.c-profile-image span {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 1rem;
+    height: 1rem;
+    background: var(--text-secondary);
+    border-radius: 50%;
+}
+
+.c-profile-content h3 {
+    font-size: 2rem;
+    font-family: var(--text-font);
+    color: #46628d;
+    margin: 0;
+}
+
+.c-profile-content p {
+    font-family: var(--text-font);
+    margin: 0;
+    font-size: 1.2rem;
+}
+.tab-ul {
+    padding: 0;
+}
+
+.t-o-t thead tr th:first-child {
+    padding-left: 0;
+}
+.t-a-s {
+    margin-bottom: 6rem;
+}
+
+.application-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 4rem 7rem;
+	text-align: center;
+	z-index: 9999;
+	display: none;
+	width: 60%;
+}
+.application-modal-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.application-modal h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.application-modal h2 i {
+    color: var(--body-bg);
+}
+
+.a-m-content a {
+    font-size: 1.5rem;
+    display: block;
+    background: #8597ad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem .5rem;
+    margin-bottom: 1rem;
+}
+.a-m-content span {
+    font-size: 1rem;
+    text-align: left;
+    display: inline-block;
+}
+.a-m-btn {
+    text-align: right;
+}
+
+.a-m-btn a {
+    background: #8597ad;
+    color: #fff;
+    padding: .7rem 3rem;
 }
