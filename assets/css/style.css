@@ -41,6 +41,7 @@
 3. Sidebar Menu
 4. Main Area
 5. form profile page
+6. Chat page
 
 ----------------------------------------------*/
 
@@ -205,7 +206,7 @@ a {
 }
 .sidebar-row ul {
     margin-top: 1rem;
-    margin-left: 6rem;
+    margin-left: 5rem;
     list-style: none;
     padding: 0;
 }
@@ -580,4 +581,231 @@ div#tabs-2 {
     background: #8597ad;
     color: #fff;
     padding: .7rem 3rem;
+}
+
+
+
+/*----------------------------------------------
+6. Chat page
+----------------------------------------------*/
+
+.chat-box {
+    background-color: #F5F6F8;
+    overflow: hidden;
+    border-radius: 3rem;
+}
+.chat-col {
+    padding-right: 0;
+}
+.chat-title-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin: 0 1.5rem;
+    border-bottom: 1px solid var(--body-bg);
+}
+
+.chat-title-list h3 {
+    font-size: 1.5rem;
+    color: #6e80a1;
+    margin: 0;
+}
+
+.chat-title-list p {
+    padding: .6rem 2.5rem;
+    background: var(--body-bg);
+    font-weight: 500;
+    font-family: var(--text-font);
+    letter-spacing: .1rem;
+    color: #486599;
+    margin: 0;
+    border-radius: 1rem;
+}
+.chat-list {
+    padding: 1rem;
+}
+
+.single-chat-list.active {
+    display: flex;
+    gap: 0 2rem;
+    align-items: center;
+}
+
+.chat-image img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.active-image {
+    position: relative;
+}
+
+.active-image:after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--text-secondary);
+}
+
+
+.chat-list {
+    padding: 1rem 0 5rem 0;
+}
+
+.single-chat-list {
+    display: flex;
+    gap: 0 2rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.chat-image img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.active-image {
+    position: relative;
+}
+
+.active-image:after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--text-secondary);
+}
+
+.chat-content span {
+    display: none;
+}
+
+.chat-content * {
+    margin: 0;
+}
+
+.chat-content h3 {
+    font-size: 1.5rem;
+    color: #4c5a72;
+    font-weight: 600;
+}
+
+.chat-content p {
+    font-size: 1.3rem;
+    text-overflow: ellipsis;
+    max-width: 18rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.active .chat-content .unread {
+    position: absolute;
+    display: inline-block;
+    top: 33%;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: gray;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.active-click {
+    background-color: var(--body-bg);
+}
+
+.active {
+    position: relative;
+}
+.chat-content .active-ago {
+    display: inline-block;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+    font-size: 1.3rem;
+}
+
+.chat-system {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.chat-name h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+}
+
+.chat-name h3 span {
+    font-weight: 600;
+}
+
+.chat-name {
+    padding: 2rem;
+    margin: 0 1rem 0 0;
+    border-bottom: 1px solid var(--body-bg);
+}
+
+.chat-name h3::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -2rem;
+    width: 1rem;
+    height: 1rem;
+    background: var(--text-secondary);
+    border-radius: 50%;
+}
+
+.chat-messaging-system form input {
+    width: 85%;
+    margin: auto;
+    display: block;
+    padding: 2rem 8.5rem 2rem .7rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+}
+
+.chat-messaging-system form input::placeholder {
+    color: var(--text-primary);
+}
+
+.chat-messaging-system form {
+    position: relative;
+}
+
+.chat-messaging-system form button {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    right: 5.5rem;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    background: var(--text-secondary);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.chat-messaging-system form a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 11rem;
+    color: #000;
 }
