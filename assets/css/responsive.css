@@ -16,6 +16,28 @@
 *
 ----------------------------------------------*/
 
+@media all and (max-width: 1300px) {
+    /* Chart Page */
+    .full-chart-list {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 5rem;
+        z-index: 11;
+        width: 31rem;
+    }
+    .chat-row {
+        height: 68rem;
+        grid-template-columns: 100%;
+        position: relative;
+    }
+    .chart-bars .chat-open {
+        display: inline-block;
+    }
+}
+
+
+
 @media all and (max-width: 1020px) {
     /* Slider */
     .sidebar {

@@ -48,4 +48,16 @@ $(document).ready(function(){
         $(".application-modal, .overlay").hide();
     });
 
+    // chat Page
+    $(".chat-open").on('click', function(){
+        $(".full-chart-list").show(500);
+        $(".chat-open").hide();
+        $(".chat-close").show();
+    });
+    $(".chat-close").on('click', function(){
+        $(".full-chart-list").hide(500);
+        $(".chat-open").show();
+        $(".chat-close").hide();
+    });
+
 });

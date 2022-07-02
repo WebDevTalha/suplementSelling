@@ -589,6 +589,12 @@ div#tabs-2 {
 6. Chat page
 ----------------------------------------------*/
 
+
+.chat-row {
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+
 .chat-box {
     background-color: #F5F6F8;
     overflow: hidden;
@@ -624,6 +630,9 @@ div#tabs-2 {
 }
 .chat-list {
     padding: 1rem;
+}
+.single-chat-list {
+    cursor: pointer;
 }
 
 .single-chat-list.active {
@@ -836,4 +845,18 @@ div#tabs-2 {
 }
 .user-message {
     flex-direction: row-reverse;
+}
+
+.chat-name {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+.chart-bars p {
+	display: none;
+	font-size: 2rem;
+	margin: 0;
+	line-height: 0;
+	color: var(--text-primary);
+    cursor: pointer;
 }
